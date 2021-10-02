@@ -35,7 +35,7 @@
     	width:1200px;
     	margin-left:auto;
     	margin-right:auto;
-    	background-color:white;
+    	background-color:black;
     	padding:30px;
     	margin-top:20px;
     	box-shadow: 20px 20px 20px #000000;
@@ -137,12 +137,12 @@
               .data(data)
               .enter().append("rect")
               .attr("x", function(d) { return (d.year - 1) * gridSize/4; })
-              .attr("y", function(d) { return (d.month - 1) * gridSize*1.5; })
+              .attr("y", function(d) { return (d.month - 1) * gridSize*1.4; })
               .attr("rx", 4)
               .attr("ry", 4)
               .attr("class", "year bordered")
               .attr("width", gridSize/5)
-              .attr("height", gridSize*1.5)
+              .attr("height", gridSize*1.4)
               .style("fill", colors[0]);
 
           heatMap.transition().duration(1000)
