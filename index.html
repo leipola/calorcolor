@@ -137,12 +137,12 @@
               .data(data)
               .enter().append("rect")
               .attr("x", function(d) { return (d.year - 1) * gridSize/4; })
-              .attr("y", function(d) { return (d.month - 1) * gridSize*1; })
+              .attr("y", function(d) { return (d.month - 1) * gridSize*1.5; })
               .attr("rx", 4)
               .attr("ry", 4)
               .attr("class", "year bordered")
               .attr("width", gridSize/5)
-              .attr("height", gridSize*1)
+              .attr("height", gridSize*1.5)
               .style("fill", colors[0]);
 
           heatMap.transition().duration(1000)
