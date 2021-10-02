@@ -32,7 +32,7 @@
       }
     	
       #wrapper {
-    	width:1000px;
+    	width:1200px;
     	margin-left:auto;
     	margin-right:auto;
     	background-color:white;
@@ -84,7 +84,7 @@
 
     <script type="text/javascript">
       var margin = { top: 0, right: 0, bottom: 0, left: 50 },
-          width = 900 - margin.left - margin.right,
+          width = 1200 - margin.left - margin.right,
           height = 360 - margin.top - margin.bottom,
           gridSize = Math.floor(30),
           legendElementWidth = gridSize*2,
@@ -113,7 +113,7 @@
               .append("g")
               .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-          var dayLabels = svg.selectAll(".dayLabel")
+          /*var dayLabels = svg.selectAll(".dayLabel")
               .data(months)
               .enter().append("text")
                 .text(function (d) { return d; })
@@ -170,8 +170,6 @@
       });
     </script>
     <br />
-	<div class="fb-like" data-href="http://www.vihrealanka.fi/galleriat/1314graafi.html" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
-    <p style="font-family:Arial;font-size:10px;margin-left:50px">Kuukausittainen lämpötilapoikkeama 1900-luvun keskiarvosta vuosina 1914–2014. Kuukausikohtainen poikkeasma näkyy, kun vie hiiren osoittimen kyseiseen kohtaan. Jakson kylmin: -0,57 astetta, joulukuu 1916. Jakson kuumin: +0,86 astetta, helmikuu 1998. Kuvaaja on toteutettu hyödytämällä <a href="http://www.ncdc.noaa.gov/cag/time-series/global">NOAA:n aineistoa</a> ja <a href="http://d3js.org/">D3.js-grafiikkakirjastoa</a>. Lehdessä julkaistu versio löytyy muun muassa <a href="https://www.facebook.com/vihrealanka/photos/a.382437446394.167474.157416596394/10152364927556395/">Vihreän Langan Facebook-sivulta</a>.</p>
     </div>
   </body>
 </html>
